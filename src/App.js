@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="px-10 pt-2 h-screen bg-[#0a192f]">
+    <div className="px-10 pt-2 h-full bg-[#0a192f]">
       <Navbar />
       <Home />
       <About />
