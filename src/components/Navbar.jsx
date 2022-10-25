@@ -10,6 +10,7 @@ const Navbar = () => {
         <li className="cursor-pointer">Home</li>
         <li className="cursor-pointer">About</li>
         <li className="cursor-pointer">Skills</li>
+        <li className="cursor-pointer">Experience</li>
         <li className="cursor-pointer">Projects</li>
         <li className="cursor-pointer">Contact</li>
       </ul>
