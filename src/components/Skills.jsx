@@ -23,7 +23,7 @@ const Skills = () => {
         Skills
       </h3>
       <h4 className="uppercase">Hover over a skill to view proficiency</h4>
-      <div className="grid grid-cols-4 gap-6 shadow-xl p-8 justify-center">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 shadow-xl p-8 justify-center">
         <SkillItem imgfile={htmllogo} proficiency={97} />
         <SkillItem imgfile={csslogo} proficiency={91} />
         <SkillItem imgfile={jslogo} proficiency={93} />
