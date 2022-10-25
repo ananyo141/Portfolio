@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="px-10 pt-2 h-full bg-gradient-to-br from-[#0a192f] to-purple-900">
+    <div className="px-10 py-4 h-full bg-gradient-to-br from-[#0a192f] to-purple-900">
       <Navbar />
       <Home />
       <About />
