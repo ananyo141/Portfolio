@@ -1,5 +1,7 @@
 import React from "react";
-import { BiCrop } from "react-icons/bi";
+
+import IconGen from "./shared/IconGen";
+import ExperiencesData from "../data/experience.json";
 
 import Card from "./shared/Card";
 
@@ -12,14 +14,16 @@ const Experience = () => {
       <h3 className="text-3xl font-bold border-b-4 pb-2 border-pink-500">
         Experience
       </h3>
-      <div>
-        <Card
-          icon={<BiCrop />}
-          title="Title"
-          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fugit corrupti
-    sit vitae cum labore voluptates quidem ducimus maiores quod cupiditate,
-    fuga numquam veniam libero nisi dolor quisquam error dolores."
-        />
+      <div className="flex gap-4">
+        {ExperiencesData.experience.map((expObj) => {
+          return (
+            <Card
+              icon={<IconGen name={expObj.icon} />}
+              title={expObj.title}
+              text={expObj.text}
+            />
+          );
+        })}
       </div>
     </div>
   );

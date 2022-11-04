@@ -3,8 +3,8 @@ import { IconContext } from "react-icons";
 
 const Card = ({ icon, title, text }) => {
   return (
-    <div className="py-10 px-20 space-y-3 max-w-lg rounded-xl shadow-xl bg-[#0d2144] transition duration-200 hover:bg-[#612608] ">
-      <div className="-ml-4">
+    <div className="py-10 px-20 space-y-3 max-w-lg rounded-xl shadow-xl bg-[#0d2144] transition duration-200 hover:bg-[#612608] hover:scale-105">
+      <div className="-ml-2">
         <IconContext.Provider value={{ color: "green", size: "70px" }}>
           {icon}
         </IconContext.Provider>
