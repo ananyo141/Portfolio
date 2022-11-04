@@ -22,7 +22,9 @@ const Navbar = () => {
         <Link activeClass="active" to="Experience" smooth={true} duration={500}>
           <li className="cursor-pointer">Experience</li>
         </Link>
+        <Link activeClass="active" to="Projects" smooth={true} duration={500}>
         <li className="cursor-pointer">Projects</li>
+        </Link>
         <Link
           activeClass="active"
           to="Testimonials"
