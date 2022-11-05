@@ -1,9 +1,10 @@
 import React from "react";
 
 import IconGen from "./shared/IconGen";
-import ExperiencesData from "../data/experience.json";
-
 import Card from "./shared/Card";
+import CircularMeter from "./shared/CircularMeter";
+
+import ExperiencesData from "../data/experience.json";
 
 const Experience = () => {
   return (
@@ -25,6 +26,7 @@ const Experience = () => {
           );
         })}
       </div>
+      <CircularMeter title="First" subtitle="Sub" />
     </div>
   );
 };
