@@ -11,7 +11,7 @@ const CircularMeter = ({ title, subtitle }) => {
           <p className="text-4xl font-bold">{title}</p>
         </div>
       </div>
-      <p className="text-xl">{subtitle}</p>
+      <p className="text-xl font-light">{subtitle}</p>
     </div>
   );
 };
