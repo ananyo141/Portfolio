@@ -26,7 +26,7 @@ const Experience = () => {
           );
         })}
       </div>
-      <CircularMeter title="First" subtitle="Sub" />
+      <CircularMeter title="3+" subtitle="Years Experience" />
     </div>
   );
 };

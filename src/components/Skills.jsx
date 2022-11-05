@@ -13,6 +13,8 @@ import nodelogo from "../assets/node.png";
 import reactlogo from "../assets/react.png";
 import tailwindlogo from "../assets/tailwind.png";
 
+// TODO: Load image files and proficiency data from json datafile
+
 const Skills = () => {
   return (
     <div
