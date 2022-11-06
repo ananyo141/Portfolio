@@ -1,7 +1,7 @@
 import React from "react";
 
 import IconGen from "./shared/IconGen";
-import Card from "./shared/Card";
+import IconCard from "./shared/IconCard";
 import CircularMeter from "./shared/CircularMeter";
 
 import ExperiencesData from "../data/experience.json";
@@ -18,7 +18,7 @@ const Experience = () => {
       </h3>
       <div className="flex gap-4">
         {ExperiencesData.experience.map((expObj) => (
-          <Card
+          <IconCard
             icon={<IconGen name={expObj.icon} />}
             title={expObj.title}
             text={expObj.text}
