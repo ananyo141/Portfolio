@@ -1,11 +1,10 @@
 import React from "react";
 
-import IconGen from "./shared/IconGen";
 import IconCard from "./shared/IconCard";
 import CircularMeter from "./shared/CircularMeter";
 
-import ExperiencesData from "../data/experience.json";
-import StatsData from "../data/stats.json";
+import ExperiencesData from "../data/ExperienceData";
+import StatsData from "../data/StatsData";
 
 const Experience = () => {
   return (
@@ -17,16 +16,16 @@ const Experience = () => {
         Experience
       </h3>
       <div className="flex gap-4">
-        {ExperiencesData.experience.map((expObj) => (
+        {ExperiencesData.map((expObj) => (
           <IconCard
-            icon={<IconGen name={expObj.icon} />}
+            icon={expObj.icon}
             title={expObj.title}
             text={expObj.text}
           />
         ))}
       </div>
       <div className="flex min-w-fit w-1/2 justify-between gap-6">
-        {StatsData.stats.map((statObj) => (
+        {StatsData.map((statObj) => (
           <CircularMeter title={statObj.title} subtitle={statObj.subtitle} />
         ))}
       </div>
