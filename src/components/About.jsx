@@ -28,7 +28,7 @@ const About = () => {
       </div>
       <img
         src={facePhoto}
-        className="w-60 h-60 rounded-xl block mt-5 md:mt-12 mr-4 outline outline-offset-8"
+        className="w-60 rounded-xl block mt-5 md:mt-12 mr-4 border-t-4 border-b-4"
         alt="Image of Me"
       />
     </div>
