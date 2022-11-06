@@ -1,5 +1,5 @@
 import React from "react";
-import facePhoto from "../assets/face.jpeg";
+import facePhoto from "../assets/face.png";
 
 const About = () => {
   return (
@@ -26,11 +26,13 @@ const About = () => {
           fingertips?
         </p>
       </div>
-      <img
-        src={facePhoto}
-        className="w-60 rounded-xl block mt-5 md:mt-12 mr-4 border-t-4 border-b-4"
-        alt="Image of Me"
-      />
+      <div className="bg-gray-400 rounded-full p-4 mt-5 md:mt-12 mr-4">
+        <img
+          src={facePhoto}
+          className="w-60 bg-white shadow-black shadow-2xl rounded-full"
+          alt="Image of Me"
+        />
+      </div>
     </div>
   );
 };

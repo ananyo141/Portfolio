@@ -5,7 +5,7 @@ const Projects = () => {
     <div
       id="carouselExampleCrossfade"
       name="Projects"
-      className="carousel slide carousel-fade relative"
+      className="carousel w-1/2 slide relative"
       data-bs-ride="carousel"
     >
       <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
