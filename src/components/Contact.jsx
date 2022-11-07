@@ -9,7 +9,7 @@ const PaddedInputField = ({ name, type, placeholder }) => {
       name={name}
       type={type}
       placeholder={placeholder}
-      className="border p-5 rounded-xl bg-white/10"
+      className="rounded-xl border bg-white/10 p-5"
     />
   );
 };
@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <div
       name="Contact"
-      className="flex flex-col md:flex-row justify-center items-center overflow-hidden gap-4 md:gap-12 xl:gap-32 h-full md:h-screen text-gray-300"
+      className="flex h-full flex-col items-center justify-center gap-4 overflow-hidden text-gray-300 md:h-screen md:flex-row md:gap-12 xl:gap-32"
     >
       <img
         src={astranautImg}
@@ -26,14 +26,14 @@ const Contact = () => {
         alt="Astranaut in space"
       />
       <div className="space-y-5">
-        <div className="flex text-xl gap-4">
+        <div className="flex gap-4 text-xl">
           <p>Follow me on</p>
           <BsFacebook />
           <BsLinkedin />
           <BsGithub />
         </div>
-        <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
-          <p className="text-center font-semibold mx-4 mb-0">Or</p>
+        <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-gray-300 after:mt-0.5 after:flex-1 after:border-t after:border-gray-300">
+          <p className="mx-4 mb-0 text-center font-semibold">Or</p>
         </div>
         <h2 className="text-3xl font-semibold">Send me a hello!</h2>
         <form action="#" className="text-gray-300" method="POST">
@@ -61,10 +61,10 @@ const Contact = () => {
             <textarea
               name="contact-message"
               placeholder="You message here..."
-              className="border p-5 rounded-xl bg-white/10 col-span-2 h-60"
+              className="col-span-2 h-60 rounded-xl border bg-white/10 p-5"
             ></textarea>
             <button
-              className="rounded-2xl border p-4 font-semibold text-white bg-pink-600"
+              className="rounded-2xl border bg-pink-600 p-4 font-semibold text-white"
               value="submit"
             >
               Submit

@@ -6,10 +6,10 @@ const Navbar = () => {
   return (
     <nav
       name="Navbar"
-      className="fixed top-0 z-50 left-0 py-2 px-2 flex w-full backdrop-blur-md items-center justify-between"
+      className="fixed top-0 left-0 z-50 flex w-full items-center justify-between py-2 px-2 backdrop-blur-md"
     >
       <img src={logo} className="ml-4 w-40" alt="Logo" />
-      <ul className="flex justify-between text-lg pr-8 sm:space-x-4 md:space-x-6 lg:space-x-12 text-slate-300">
+      <ul className="flex justify-between pr-8 text-lg text-slate-300 sm:space-x-4 md:space-x-6 lg:space-x-12">
         <Link activeClass="active" to="Home" smooth={true} duration={500}>
           <li className="cursor-pointer">Home</li>
         </Link>
@@ -23,7 +23,7 @@ const Navbar = () => {
           <li className="cursor-pointer">Experience</li>
         </Link>
         <Link activeClass="active" to="Projects" smooth={true} duration={500}>
-        <li className="cursor-pointer">Projects</li>
+          <li className="cursor-pointer">Projects</li>
         </Link>
         <Link
           activeClass="active"

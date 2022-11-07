@@ -19,13 +19,13 @@ const Skills = () => {
   return (
     <div
       name="Skills"
-      className="flex flex-col space-y-8 justify-center items-center h-screen text-gray-300"
+      className="flex h-screen flex-col items-center justify-center space-y-8 text-gray-300"
     >
-      <h3 className="text-3xl font-bold border-b-4 pb-2 border-pink-500">
+      <h3 className="border-b-4 border-pink-500 pb-2 text-3xl font-bold">
         Skills
       </h3>
       <h4 className="uppercase">Hover over a skill to view proficiency</h4>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 shadow-xl p-8 justify-center">
+      <div className="grid grid-cols-2 justify-center gap-6 p-8 shadow-xl sm:grid-cols-4">
         <SkillItem imgfile={htmllogo} proficiency={97} />
         <SkillItem imgfile={csslogo} proficiency={91} />
         <SkillItem imgfile={jslogo} proficiency={93} />

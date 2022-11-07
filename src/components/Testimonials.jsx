@@ -8,18 +8,18 @@ const Testimonials = () => {
   return (
     <section
       name="Testimonials"
-      className="flex flex-col justify-center items-center mb-20 text-gray-700 h-screen"
+      className="mb-20 flex h-screen flex-col items-center justify-center text-gray-700"
     >
-      <div className="flex flex-col gap-4 justify-center items-center text-center">
-        <h3 className="text-3xl font-bold border-b-4 pb-2 border-pink-500 text-white">
+      <div className="flex flex-col items-center justify-center gap-4 text-center">
+        <h3 className="border-b-4 border-pink-500 pb-2 text-3xl font-bold text-white">
           Testimonials
         </h3>
-        <p className="mb-6 pb-2 md:mb-12 md:pb-0 text-gray-300 font-light">
+        <p className="mb-6 pb-2 font-light text-gray-300 md:mb-12 md:pb-0">
           Let's see what my colleagues and mentors say about me
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-4 justify-center text-center">
+      <div className="flex flex-wrap justify-center gap-4 text-center">
         {TestmonialsData.map((testmObj) => (
           <ImageCard
             image={testmObj.image}

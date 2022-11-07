@@ -5,17 +5,17 @@ const About = () => {
   return (
     <div
       name="About"
-      className="flex flex-col md:flex-row-reverse h-screen text-gray-300 gap-4 lg:gap-10 xl:gap-28 items-center justify-center"
+      className="flex h-screen flex-col items-center justify-center gap-4 text-gray-300 md:flex-row-reverse lg:gap-10 xl:gap-28"
     >
-      <div className="flex flex-col gap-5 shadow-xl rounded-3xl p-10 items-center md:items-end md:max-w-lg lg:max-w-xl text-center md:text-right">
-        <h3 className="text-3xl font-bold border-b-4 pb-2 border-pink-500">
+      <div className="flex flex-col items-center gap-5 rounded-3xl p-10 text-center shadow-xl md:max-w-lg md:items-end md:text-right lg:max-w-xl">
+        <h3 className="border-b-4 border-pink-500 pb-2 text-3xl font-bold">
           About
         </h3>
         <p className="text-2xl font-bold">
           Hey, I am Ananyobrata Pal, nice to meet you! You can contact me, or
           just have a look around!
         </p>
-        <p className="font-light text-lg text-gray-400">
+        <p className="text-lg font-light text-gray-400">
           I am a CSE Undergrad diving into the world of technology, interested
           in building full stack apps. An Open Source advocate obsessed with
           ArchLinux and (N)vim. I am passionate about building excellent
@@ -26,10 +26,10 @@ const About = () => {
           fingertips?
         </p>
       </div>
-      <div className="bg-gray-400 rounded-full p-4 mt-5 md:mt-12 mr-4">
+      <div className="mt-5 mr-4 rounded-full bg-gray-400 p-4 md:mt-12">
         <img
           src={facePhoto}
-          className="w-60 bg-white/40 shadow-black shadow-2xl rounded-full"
+          className="w-60 rounded-full bg-white/40 shadow-2xl shadow-black"
           alt="Image of Me"
         />
       </div>

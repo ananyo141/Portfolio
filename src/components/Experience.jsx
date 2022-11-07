@@ -10,9 +10,9 @@ const Experience = () => {
   return (
     <div
       name="Experience"
-      className="flex flex-col h-screen text-gray-300 gap-24 items-center justify-center"
+      className="flex h-screen flex-col items-center justify-center gap-24 text-gray-300"
     >
-      <h3 className="text-3xl font-bold border-b-4 pb-2 border-pink-500">
+      <h3 className="border-b-4 border-pink-500 pb-2 text-3xl font-bold">
         Experience
       </h3>
       <div className="flex gap-4">
@@ -24,7 +24,7 @@ const Experience = () => {
           />
         ))}
       </div>
-      <div className="flex min-w-fit w-1/2 justify-between gap-6">
+      <div className="flex w-1/2 min-w-fit justify-between gap-6">
         {StatsData.map((statObj) => (
           <CircularMeter title={statObj.title} subtitle={statObj.subtitle} />
         ))}
