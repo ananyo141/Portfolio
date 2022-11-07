@@ -3,8 +3,8 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const ImageCard = ({ image, name, text }) => {
   return (
-    <div className="block rounded-lg shadow-lg bg-white w-72">
-      <div className="overflow-hidden rounded-t-lg h-28 bg-[#9d789b]"></div>
+    <div className="block rounded-lg shadow-lg bg-gray-300 w-72">
+      <div className="overflow-hidden rounded-t-lg h-28 bg-cyan-600"></div>
       <div className="w-24 -mt-12 overflow-hidden border-2 border-white rounded-full mx-auto bg-white">
         <img src={image} />
       </div>

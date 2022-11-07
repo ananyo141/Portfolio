@@ -1,4 +1,5 @@
 import React from "react";
+import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 
 import astranautImg from "../assets/astronaut.svg";
 
@@ -24,10 +25,19 @@ const Contact = () => {
         className="max-w-xs lg:max-w-md xl:max-w-xl"
         alt="Astranaut in space"
       />
-      <div name="Form">
-        <h2 className="text-3xl font-semibold">Get In Touch</h2>
+      <div className="space-y-5">
+        <div className="flex text-xl gap-4">
+          <p>Follow me on</p>
+          <BsFacebook />
+          <BsLinkedin />
+          <BsGithub />
+        </div>
+        <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
+          <p className="text-center font-semibold mx-4 mb-0">Or</p>
+        </div>
+        <h2 className="text-3xl font-semibold">Send me a hello!</h2>
         <form action="#" className="text-gray-300" method="POST">
-          <div className="mt-8 grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 gap-3">
             <PaddedInputField
               name="firstname"
               type="text"

@@ -5,9 +5,9 @@ const About = () => {
   return (
     <div
       name="About"
-      className="flex flex-col md:flex-row-reverse h-screen text-gray-300 gap-10 items-center justify-center"
+      className="flex flex-col md:flex-row-reverse h-screen text-gray-300 gap-4 lg:gap-10 xl:gap-28 items-center justify-center"
     >
-      <div className="flex flex-col gap-5 items-center md:items-end md:max-w-lg lg:max-w-xl text-center md:text-right">
+      <div className="flex flex-col gap-5 shadow-xl rounded-3xl p-10 items-center md:items-end md:max-w-lg lg:max-w-xl text-center md:text-right">
         <h3 className="text-3xl font-bold border-b-4 pb-2 border-pink-500">
           About
         </h3>
@@ -29,7 +29,7 @@ const About = () => {
       <div className="bg-gray-400 rounded-full p-4 mt-5 md:mt-12 mr-4">
         <img
           src={facePhoto}
-          className="w-60 bg-white shadow-black shadow-2xl rounded-full"
+          className="w-60 bg-white/40 shadow-black shadow-2xl rounded-full"
           alt="Image of Me"
         />
       </div>
