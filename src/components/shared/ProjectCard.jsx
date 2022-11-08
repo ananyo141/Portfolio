@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import Modal from "./Modal";
 
@@ -24,8 +24,9 @@ const ProjectCard = (props) => {
           veritatis placeat?
         </p>
       </motion.button>
-
-      {modalOpen ? <Modal modalOpen={modalOpen} handleClose={close} /> : null}
+      <AnimatePresence initial={false} exitBeforeEnter={true}>
+        {modalOpen ? <Modal modalOpen={modalOpen} handleClose={close} /> : null}
+      </AnimatePresence>
     </div>
   );
 };
