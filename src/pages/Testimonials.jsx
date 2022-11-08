@@ -1,6 +1,6 @@
 import React from "react";
 
-import ImageCard from "./shared/ImageCard";
+import ImageCard from "../components/ImageCard";
 
 import TestmonialsData from "../data/TestmonialsData";
 

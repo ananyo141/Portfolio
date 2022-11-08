@@ -1,7 +1,7 @@
 import React from "react";
 
-import IconCard from "./shared/IconCard";
-import CircularMeter from "./shared/CircularMeter";
+import IconCard from "../components/IconCard";
+import CircularMeter from "../components/CircularMeter";
 
 import ExperiencesData from "../data/ExperienceData";
 import StatsData from "../data/StatsData";

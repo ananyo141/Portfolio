@@ -1,6 +1,6 @@
 import React from "react";
 
-import ProjectCard from "./shared/ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
   return (

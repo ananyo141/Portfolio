@@ -1,4 +1,4 @@
-import Backdrop from "../Backdrop";
+import Backdrop from "./Backdrop";
 import { motion } from "framer-motion";
 
 const Modal = ({ handleClose, text }) => {
@@ -34,7 +34,7 @@ const Modal = ({ handleClose, text }) => {
         exit="exit"
       >
         <p>{text}</p>
-        <button className="h-1/2 w-1/2 p-20 bg-white/20" onClick={handleClose}>
+        <button className="h-1/2 w-1/2 bg-white/20 p-20" onClick={handleClose}>
           Close
         </button>
       </motion.div>

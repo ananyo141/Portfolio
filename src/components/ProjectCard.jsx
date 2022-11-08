@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import Modal from "./Modal";
+import Modal from "./shared/Modal";
 
 const ProjectCard = (props) => {
   const [modalOpen, setModalOpen] = useState(false);

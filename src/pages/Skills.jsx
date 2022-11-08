@@ -1,6 +1,6 @@
 import React from "react";
 
-import SkillItem from "./shared/SkillItem";
+import SkillItem from "../components/SkillItem";
 
 import csslogo from "../assets/css.png";
 import awslogo from "../assets/aws.png";

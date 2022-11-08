@@ -1,6 +1,6 @@
 import React from "react";
 
-import meterlogo from "../../assets/meter1.svg";
+import meterlogo from "../assets/meter1.svg";
 
 const CircularMeter = ({ title, subtitle }) => {
   return (
