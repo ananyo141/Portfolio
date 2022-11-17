@@ -14,7 +14,7 @@ const Projects = () => {
         <h3 className="border-b-4 border-pink-500 pb-2 text-3xl font-bold">
           Projects
         </h3>
-        <div className="flex">
+        <div className="flex flex-wrap justify-center w-screen gap-4">
           {projectsData.map(
             ({ title, description, image, ghlink, demolink }) => (
               <ProjectCard
