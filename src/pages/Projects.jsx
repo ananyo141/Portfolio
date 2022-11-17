@@ -22,31 +22,18 @@ const Projects = () => {
         <h3 className="border-b-4 border-pink-500 pb-2 text-3xl font-bold">
           Projects
         </h3>
-        <div className="flex">
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={50}
-            slidesPerView={3}
-            navigation
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
-          >
-            {projectsData.map(
-              ({ title, description, image, ghlink, demolink }) => (
-                <SwiperSlide>
-                  <ProjectCard
-                    title={title}
-                    description={description}
-                    image={image}
-                    ghlink={ghlink}
-                    demolink={demolink}
-                  />
-                </SwiperSlide>
-              )
-            )}
-          </Swiper>
+        <div className="flex flex-wrap justify-center w-screen gap-4">
+          {projectsData.map(
+            ({ title, description, image, ghlink, demolink }) => (
+              <ProjectCard
+                title={title}
+                description={description}
+                image={image}
+                ghlink={ghlink}
+                demolink={demolink}
+              />
+            )
+          )}
         </div>
       </div>
     </div>
