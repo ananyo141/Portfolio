@@ -2,12 +2,15 @@ import React from "react";
 
 const IconButton = ({ icon, text, link }) => {
   return (
-    <div className="flex gap-2">
-      <a className="block" href={link} target="_blank" rel="noreferrer">
-        {icon}
-      </a>
+    <a
+      className="flex items-center gap-3"
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {icon}
       <span>{text}</span>
-    </div>
+    </a>
   );
 };
 

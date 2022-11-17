@@ -2,6 +2,8 @@ import React from "react";
 
 import ProjectCard from "../components/ProjectCard";
 
+import projectsData from "../data/ProjectsData";
+
 const Projects = () => {
   return (
     <div
@@ -12,7 +14,19 @@ const Projects = () => {
         <h3 className="border-b-4 border-pink-500 pb-2 text-3xl font-bold">
           Projects
         </h3>
-        <ProjectCard />
+        <div className="flex">
+          {projectsData.map(
+            ({ title, description, image, ghlink, demolink }) => (
+              <ProjectCard
+                title={title}
+                description={description}
+                image={image}
+                ghlink={ghlink}
+                demolink={demolink}
+              />
+            )
+          )}
+        </div>
       </div>
     </div>
   );

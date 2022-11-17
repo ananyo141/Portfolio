@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { FaGithubAlt, FaPlayCircle } from "react-icons/fa";
 
 import Backdrop from "./Backdrop";
+import IconButton from "./IconButton";
 import { Flip } from "./Animations";
 
-const Modal = ({ handleClose, title, subtitle, ghlink, demolink }) => {
+const Modal = ({ handleClose, title, description, ghlink, demolink }) => {
   return (
     <Backdrop onClick={handleClose}>
       <motion.div
@@ -33,7 +35,19 @@ const Modal = ({ handleClose, title, subtitle, ghlink, demolink }) => {
             animate
           >
             <h4 className="text-2xl font-semibold">{title}</h4>
-            <p className="text-md">{subtitle}</p>
+            <p className="text-md">{description}</p>
+            <div className="flex justify-between">
+              <IconButton
+                icon={<FaGithubAlt className="scale-150" />}
+                text="Code"
+                link={ghlink}
+              />
+              <IconButton
+                icon={<FaPlayCircle className="scale-150" />}
+                text="Demo"
+                link={demolink}
+              />
+            </div>
           </motion.div>
         </div>
       </motion.div>
