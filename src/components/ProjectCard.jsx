@@ -11,7 +11,7 @@ const ProjectCard = ({ title, description, image, ghlink, demolink }) => {
   const open = () => setModalOpen(true);
 
   return (
-    <div className="isolate-auto">
+    <div className="">
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
