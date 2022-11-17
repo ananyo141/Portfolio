@@ -1,4 +1,12 @@
 import React from "react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Swiper Styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 import ProjectCard from "../components/ProjectCard";
 
@@ -15,17 +23,30 @@ const Projects = () => {
           Projects
         </h3>
         <div className="flex">
-          {projectsData.map(
-            ({ title, description, image, ghlink, demolink }) => (
-              <ProjectCard
-                title={title}
-                description={description}
-                image={image}
-                ghlink={ghlink}
-                demolink={demolink}
-              />
-            )
-          )}
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={50}
+            slidesPerView={3}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            {projectsData.map(
+              ({ title, description, image, ghlink, demolink }) => (
+                <SwiperSlide>
+                  <ProjectCard
+                    title={title}
+                    description={description}
+                    image={image}
+                    ghlink={ghlink}
+                    demolink={demolink}
+                  />
+                </SwiperSlide>
+              )
+            )}
+          </Swiper>
         </div>
       </div>
     </div>

@@ -2,28 +2,28 @@ import projectBanner from "../assets/project_banner.jpg";
 
 const ProjectsData = [
   {
-    title: "First Internship",
+    title: "First Project",
     description: "This is my first internship",
     image: { projectBanner },
     ghlink: "https://github.com/ananyo141/",
     demolink: "https://ananyo141.github.io/",
   },
   {
-    title: "First Internship",
+    title: "Second Project",
     description: "This is my first internship",
     image: { projectBanner },
     ghlink: "https://github.com/ananyo141/",
     demolink: "https://ananyo141.github.io/",
   },
   {
-    title: "First Internship",
+    title: "Third Project",
     description: "This is my first internship",
     image: { projectBanner },
     ghlink: "https://github.com/ananyo141/",
     demolink: "https://ananyo141.github.io/",
   },
   {
-    title: "First Internship",
+    title: "Fourth Project",
     description: "This is my first internship",
     image: { projectBanner },
     ghlink: "https://github.com/ananyo141/",
