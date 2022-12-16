@@ -50,7 +50,7 @@ const Navsidebar = () => {
   return (
     <>
       <RxHamburgerMenu
-        className="-ml-3 mt-2 scale-150 text-white"
+        className="-ml-3 mt-2 scale-150 text-white cursor-pointer md:hidden"
         onClick={toggleMenu}
       />
       {isOpen ? (
