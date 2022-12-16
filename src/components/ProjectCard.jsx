@@ -24,7 +24,7 @@ const ProjectCard = ({ title, description, image, ghlink, demolink }) => {
           <p className="text-slate-500">Click to learn more</p>
         </div>
       </motion.button>
-      <AnimatePresence initial={false} exitBeforeEnter={true}>
+      <AnimatePresence initial={false} mode="wait">
         {modalOpen ? (
           <Modal
             modalOpen={modalOpen}

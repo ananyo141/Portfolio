@@ -10,7 +10,7 @@ import Footer from "./pages/Footer";
 
 function App() {
   return (
-    <div className="px-10 py-4 h-full bg-gradient-to-br from-[#0a192f] to-purple-900">
+    <div className="overflow-hidden px-10 py-4 h-full bg-gradient-to-br from-[#0a192f] to-purple-900">
       <Navbar />
       <Home />
       <About />
