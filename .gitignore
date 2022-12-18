@@ -3,6 +3,9 @@
 # Editor files
 .vscode/
 
+# lint and commit-hooks
+.husky/
+
 # dependencies
 /node_modules
 /.pnp

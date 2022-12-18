@@ -33,6 +33,7 @@ const Navtopbar = () => {
 const Navsidebar = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
+  // Animation for sidebar
   const sideVariants = {
     open: {
       clipPath: `circle(1000px at 40px 40px)`,
@@ -49,6 +50,7 @@ const Navsidebar = () => {
     },
   };
 
+  // Animation for each menu item
   const listVariants = {
     open: {
       transition: { staggerChildren: 0.05 },
@@ -57,6 +59,7 @@ const Navsidebar = () => {
       transition: { staggerChildren: 0.04, staggerDirection: -1 },
     },
   };
+
   return (
     <>
       <RxHamburgerMenu
@@ -73,7 +76,7 @@ const Navsidebar = () => {
           onClick={toggleOpen}
         />
         <div className="flex h-full flex-col items-center justify-center sm:h-auto sm:items-start">
-          <img src={logo} alt="logo" className="scale-75 mt-4" />
+          <img src={logo} alt="logo" className="mt-4 scale-75" />
           <div>
             <motion.ul
               variants={listVariants}
@@ -84,6 +87,7 @@ const Navsidebar = () => {
                   icon={item.icon}
                   title={item.name}
                   linkname={item.name}
+                  toggleCallback={toggleOpen}
                 />
               ))}
             </motion.ul>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
-const MenuItem = ({ icon, title, linkname }) => {
+const MenuItem = ({ icon, title, linkname, toggleCallback }) => {
   const menuVariants = {
     open: {
       y: 0,
@@ -32,6 +32,7 @@ const MenuItem = ({ icon, title, linkname }) => {
         to={linkname}
         smooth={true}
         duration={500}
+        onClick={toggleCallback}
       >
         <div className="flex items-center gap-10">
           {icon}

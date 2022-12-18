@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div
       name="Home"
-      className="flex h-screen max-w-lg items-center justify-center lg:max-w-full"
+      className="flex h-fit max-w-lg items-center justify-center sm:h-screen lg:max-w-full"
     >
       <div className="max-w-4xl space-y-6">
         <h4 className="-mb-6 text-xl text-pink-400">Hello World, my name is</h4>

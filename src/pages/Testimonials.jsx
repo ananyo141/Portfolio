@@ -8,7 +8,7 @@ const Testimonials = () => {
   return (
     <section
       name="Testimonials"
-      className="mb-20 flex h-screen flex-col items-center justify-center text-gray-700"
+      className="mb-20 flex h-fit flex-col items-center justify-center text-gray-700 sm:h-screen"
     >
       <div className="flex flex-col items-center justify-center gap-4 text-center">
         <h3 className="border-b-4 border-pink-500 pb-2 text-3xl font-bold text-white">
