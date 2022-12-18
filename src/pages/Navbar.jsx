@@ -5,17 +5,7 @@ import { motion, useCycle } from "framer-motion";
 
 import logo from "../assets/logo.png";
 import MenuItem from "../components/MenuItem";
-
-// Navigation entries; have save section names
-const NavItems = [
-  "Home",
-  "About",
-  "Skills",
-  "Experience",
-  "Projects",
-  "Testimonials",
-  "Contact",
-];
+import NavItemsData from "../data/NavItemsData";
 
 // Top navigation bar for larger displays
 const Navtopbar = () => {
@@ -23,9 +13,14 @@ const Navtopbar = () => {
     <nav className="fixed top-0 left-0 z-50 hidden w-full items-center justify-between py-2 px-2 backdrop-blur-md md:flex">
       <img src={logo} className="ml-4 w-40" alt="Logo" />
       <ul className="flex justify-between pr-8 text-lg text-slate-300 sm:space-x-4 md:space-x-6 lg:space-x-12">
-        {NavItems.map((item) => (
-          <Link activeClass="active" to={item} smooth={true} duration={500}>
-            <li className="cursor-pointer">{item}</li>
+        {NavItemsData.map((item) => (
+          <Link
+            activeClass="active"
+            to={item.name}
+            smooth={true}
+            duration={500}
+          >
+            <li className="cursor-pointer">{item.name}</li>
           </Link>
         ))}
       </ul>
@@ -65,26 +60,31 @@ const Navsidebar = () => {
   return (
     <>
       <RxHamburgerMenu
-        className="fixed -ml-3 mt-2 scale-150 cursor-pointer text-white backdrop-blur md:hidden"
+        className="fixed z-50 -ml-3 mt-2 scale-150 cursor-pointer text-white backdrop-blur md:hidden"
         onClick={toggleOpen}
       />
       <motion.nav
         variants={sideVariants}
         animate={isOpen ? "open" : "closed"}
-        className="fixed top-0 left-0 bottom-0 z-50 w-full bg-white sm:w-[300px] md:hidden"
+        className="fixed top-0 left-0 bottom-0 z-50 w-full bg-gray-200 sm:w-[300px] md:hidden"
       >
         <RxCross1
           className="ml-7 mt-6 scale-150 cursor-pointer"
           onClick={toggleOpen}
         />
-        <div className="flex justify-center">
+        <div className="flex h-full flex-col items-center justify-center sm:h-auto sm:items-start">
+          <img src={logo} alt="logo" className="scale-75 mt-4" />
           <div>
             <motion.ul
               variants={listVariants}
               className="mt-5 w-full p-5 sm:w-[260px]"
             >
-              {NavItems.map((item) => (
-                <MenuItem icon={null} title={item} linkname={item} />
+              {NavItemsData.map((item) => (
+                <MenuItem
+                  icon={item.icon}
+                  title={item.name}
+                  linkname={item.name}
+                />
               ))}
             </motion.ul>
           </div>
