@@ -8,7 +8,7 @@ const StatsData = [
     subtitle: "Completed Projects",
   },
   {
-    title: "2",
+    title: "1",
     subtitle: "Companies Worked",
   },
 ];

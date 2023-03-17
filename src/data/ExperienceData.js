@@ -3,18 +3,18 @@ import { MdCrop, MdAndroid, MdAssignmentTurnedIn } from "react-icons/md";
 const ExperienceData = [
   {
     icon: <MdCrop />,
-    title: "First Internship",
-    text: "This is my first internship",
+    title: "HJ InfoTech",
+    text: "July 2022 - September 2022, Full Stack Developer",
   },
   {
     icon: <MdAndroid />,
-    title: "Second Internship",
-    text: "Here I did my second internship",
+    title: "Smart India Hackathon 2022 Finals",
+    text: "Flutter Developer, Frontend",
   },
   {
     icon: <MdAssignmentTurnedIn />,
-    title: "Third Internship",
-    text: "Here I did my third internship",
+    title: "Cognizance Techfest 2023 - IIT Roorkee",
+    text: "Full Stack Developer",
   },
 ];
 

@@ -3,8 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import Modal from "./shared/Modal";
 
-import projectBanner from "../assets/project_banner.jpg";
-
 const ProjectCard = ({ title, description, image, ghlink, demolink }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const close = () => setModalOpen(false);
@@ -18,9 +16,9 @@ const ProjectCard = ({ title, description, image, ghlink, demolink }) => {
         className="relative w-96 "
         onClick={() => (modalOpen ? close() : open())}
       >
-        <img src={projectBanner} className="rounded-xl" alt="project banner" />
-        <div className="absolute bottom-0 left-0 right-0 space-y-2 p-4 filter backdrop-blur">
-          <h1 className="text-2xl font-light tracking-wide">{title}</h1>
+        <img src={image} className="h-64 rounded-xl" alt="project banner" />
+        <div className="absolute bottom-0 left-0 right-0 space-y-2 p-4 filter backdrop-blur-sm">
+          <h1 className="text-2xl font-bold text-gray-900 tracking-wide">{title}</h1>
           <p className="text-slate-500">Click to learn more</p>
         </div>
       </motion.button>

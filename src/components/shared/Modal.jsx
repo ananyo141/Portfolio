@@ -11,7 +11,7 @@ const Modal = ({ handleClose, title, description, ghlink, demolink }) => {
     <Backdrop onClick={handleClose}>
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        className="mx-auto flex h-1/2 w-1/2 flex-col items-center justify-center rounded-xl pr-4"
+        className="mx-auto flex flex-col items-center justify-center rounded-xl pr-4"
         variants={Flip}
         initial="hidden"
         animate="visible"
