@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.93344659.css",
-    "main.js": "/Portfolio/static/js/main.1d43352f.js",
-    "static/media/project_banner.jpg": "/Portfolio/static/media/project_banner.85029e0fd71b225a9a66.jpg",
+    "main.js": "/Portfolio/static/js/main.a20ab9c8.js",
+    "static/media/computershop_project.png": "/Portfolio/static/media/computershop_project.5e173e00cece3f74b41f.png",
     "static/media/face.png": "/Portfolio/static/media/face.381adcf752782bbd532a.png",
     "static/media/astronaut.svg": "/Portfolio/static/media/astronaut.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/snappio_project.png": "/Portfolio/static/media/snappio_project.05227b3500a44dd07d46.png",
     "static/media/Resume.pdf": "/Portfolio/static/media/Resume.e24b6984d70d9aee66c2.pdf",
+    "static/media/smartshala_project.jpg": "/Portfolio/static/media/smartshala_project.a44cd6ea8ce29422cf7a.jpg",
     "static/media/react.png": "/Portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/aws.png": "/Portfolio/static/media/aws.95bdee6b9922c9b94fd5.png",
     "static/media/node.png": "/Portfolio/static/media/node.952a9ea986dcfa5229ad.png",
@@ -20,10 +22,10 @@
     "static/media/meter1.svg": "/Portfolio/static/media/meter1.d8974437f5287d7d711f27aee48e72f2.svg",
     "index.html": "/Portfolio/index.html",
     "main.93344659.css.map": "/Portfolio/static/css/main.93344659.css.map",
-    "main.1d43352f.js.map": "/Portfolio/static/js/main.1d43352f.js.map"
+    "main.a20ab9c8.js.map": "/Portfolio/static/js/main.a20ab9c8.js.map"
   },
   "entrypoints": [
     "static/css/main.93344659.css",
-    "static/js/main.1d43352f.js"
+    "static/js/main.a20ab9c8.js"
   ]
 }
