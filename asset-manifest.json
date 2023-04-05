@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a7d3e222.css",
-    "main.js": "/Portfolio/static/js/main.48290eba.js",
+    "main.css": "/Portfolio/static/css/main.8e4729eb.css",
+    "main.js": "/Portfolio/static/js/main.b2871d0b.js",
     "static/media/computershop_project.png": "/Portfolio/static/media/computershop_project.5e173e00cece3f74b41f.png",
     "static/media/face.png": "/Portfolio/static/media/face.381adcf752782bbd532a.png",
     "static/media/astronaut.svg": "/Portfolio/static/media/astronaut.84bf93eb20488a753440bf83d27db7bb.svg",
     "static/media/snappio_project.png": "/Portfolio/static/media/snappio_project.05227b3500a44dd07d46.png",
+    "static/media/sunyul.jpeg": "/Portfolio/static/media/sunyul.6fe23cf793fc7e015591.jpeg",
+    "static/media/imon.jpg": "/Portfolio/static/media/imon.694a04bf597f1091f847.jpg",
     "static/media/Resume.pdf": "/Portfolio/static/media/Resume.e24b6984d70d9aee66c2.pdf",
+    "static/media/shreyam.jpg": "/Portfolio/static/media/shreyam.03e9df17e9683e69760c.jpg",
     "static/media/smartshala_project.jpg": "/Portfolio/static/media/smartshala_project.a44cd6ea8ce29422cf7a.jpg",
     "static/media/react.png": "/Portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/aws.png": "/Portfolio/static/media/aws.95bdee6b9922c9b94fd5.png",
@@ -21,11 +24,11 @@
     "static/media/javascript.png": "/Portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "static/media/meter1.svg": "/Portfolio/static/media/meter1.d8974437f5287d7d711f27aee48e72f2.svg",
     "index.html": "/Portfolio/index.html",
-    "main.a7d3e222.css.map": "/Portfolio/static/css/main.a7d3e222.css.map",
-    "main.48290eba.js.map": "/Portfolio/static/js/main.48290eba.js.map"
+    "main.8e4729eb.css.map": "/Portfolio/static/css/main.8e4729eb.css.map",
+    "main.b2871d0b.js.map": "/Portfolio/static/js/main.b2871d0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7d3e222.css",
-    "static/js/main.48290eba.js"
+    "static/css/main.8e4729eb.css",
+    "static/js/main.b2871d0b.js"
   ]
 }
