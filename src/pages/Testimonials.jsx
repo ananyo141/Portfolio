@@ -25,6 +25,7 @@ const Testimonials = () => {
             image={testmObj.image}
             name={testmObj.name}
             text={testmObj.text}
+            designation={testmObj.designation}
           />
         ))}
       </div>
